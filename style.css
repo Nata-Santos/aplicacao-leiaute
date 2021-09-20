@@ -1,0 +1,42 @@
+.hg-conteudo {
+    background-color: rgb(255, 255, 255);
+}
+
+.hg-conteudo > main {
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.hg-conteudo > nav {
+    order: -1;
+}
+
+.hg-conteudo > main {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .hg-conteudo {
+        flex-flow: row;
+    }
+
+    .hg-conteudo > aside,
+    .hg-conteudo > nav {
+        flex: 0 0 200px;
+        background-color: rgb(77, 69, 114);
+    }
+}
+
